@@ -1,12 +1,8 @@
-function AverageNum(numbers) {
-    if (!Array.isArray(numbers) || numbers.length === 0) {
-        return 0;
+function calculateSum() {
+    let sum = 0;
+    for (let i = 0; i<=100; i++) {
+        sum += i;
     }
-    
-    const sum = numbers.reduce((acc, num) => acc + num, 0);
-    const average = sum / numbers.length;
-    return average;
+    console.log('Sum is ', sum);
 }
-const numbers = [13, 24, 35, 45, 58];
-const result = AverageNum(numbers);
-console.log('Average is ', result);
+calculateSum();
