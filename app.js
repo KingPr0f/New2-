@@ -1,26 +1,12 @@
-const resultElement = document.getElementById('result')
-const input1 = document.getElementById('input1')
-const input2 = document.getElementById('input2')
-const submitBtn = document.getElementById('submit')
-const plusBtn = document.getElementById('plus')
-const minusBtn = document.getElementById('minus')
-let action = '+'
-
-plusBtn.onclick = function() {
-    action = '+'
-}
-
-minusBtn.onclick = function() {
-    action = '-'
-}
-
-submitBtn.onclick = function() {
-    if (action == '+') {
-const sum = Number(input1.value) + Number(input2.value)
-resultElement.textContent = sum
-} else if (action == '-') {
-    const sum = Number(input1.value) - Number(input2.value)
-    resultElement.textContent = sum
+function averageNum(numarray) {
+    if (!Array.isArray || numarray.length === 0) {
+        return 0;
     }
+    const sum = numarray.reduce((acc,num) => acc + num, 0);
+    const average = sum / numarray.length;
+    return average;
 }
 
+const numberArray = [22,33,44,55,77];
+const result = averageNum(numberArray);
+console.log('Average is ', result);
