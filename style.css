@@ -1,0 +1,32 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display:flex; 
+      justify-content: center;
+    align-items: center;
+}
+
+.page{
+  width: 450px;
+  margin: 0px, auto;
+  background-color: pink;
+  padding: 20px;
+  box-shadow : 5px 10px 10px 2px red;
+}
+input{
+  margin: 5px;
+}
+button{
+  margin: 10px;
+  margin-top: 25px;
+  background-color : blue;
+  cursor: pointer;
+  color:white;
+}
+.btn:hover {opacity : 0.75}
+.gen{
+  margin: 0px;
+}

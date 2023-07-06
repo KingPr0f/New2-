@@ -1,12 +1,20 @@
-function averageNum(numarray) {
-    if (!Array.isArray || numarray.length === 0) {
-        return 0;
-    }
-    const sum = numarray.reduce((acc,num) => acc + num, 0);
-    const average = sum / numarray.length;
-    return average;
-}
+function submitValue () {
 
-const numberArray = [22,33,44,55,77];
-const result = averageNum(numberArray);
-console.log('Average is ', result);
+    let first = document.querySelector(".fname").value;
+    let last = document.querySelector(".lname").value;
+    let res = document.getElementById ("result");
+      let mySkills = document.getElementsByName("Team");
+      
+      let selected = [];
+      for (let i=0; i < mySkills.length; i++){
+        if(mySkills[i].checked){
+          selected.push(mySkills[i].value);
+        }
+      }
+    
+     if(first.length===0) {
+       alert ("First Name is not Entered");
+     }
+     
+     res.innerHTML = `Hello I am ${first} ${last}<br> My Team is : ${selected}<br> Thank You`;
+    }

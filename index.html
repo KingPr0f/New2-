@@ -5,8 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>01. Js base</title>
+  <link href='style.css' rel='stylesheet'>
 </head>
 <body>
+  <form class = page>
+    <div>
+ <label> <b> First Name : </b> </label>
+<input type ="text" class = "fname" placeholder = "Enter First Name" required /> 
+</div>
+
+<label> <b> Last Name : </b> </label>
+<input type ="text" class= "lname" placeholder = "Eneter Last Name" required />
+
+<div>
+<label> <b> Football Position : </b> </label>
+<label>  Forward  </label> 
+<input type="radio" id="Forward" name="Football Position" value="Forward">
+<label>  Midfielder </label>
+<input type="radio" id="Midfielder" name="Football Position" value="Midfielder">
+<label>  Defender </label>
+<input type="radio" id="Defender" name="Football Position" value="Defender"><br><br>
+</div>
+
+<label> <b> Team : </b> </label>
+<label>  Barcelona  </label> 
+<input type="Checkbox" name="Team" value="Barcelona">
+<label>  Real Madrid  </label>
+<input type="Checkbox" name="Team" value="Real Madrid">
+<label> Juventus  </label>
+<input type="CHeckbox" name="Team" value="Juventus">
+ <label> Man City </label>
+<input type="CHeckbox" name="Team" value="Man City">
+    <button type = "button" value= "submit" class="btn" onclick = "submitValue()"> submit </button>
+    
+    <div id="result"> </div>
+  </form>
   <script src="app.js"></script>
-</body>
+  </body>
 </html>
